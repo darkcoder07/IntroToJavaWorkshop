@@ -1,14 +1,35 @@
 package day1.robot;
 
+import java.awt.Color;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class MyFirstJavaProgram {
 	public static void main(String[] args) {
 		
 		// START HERE
+Robot DarkBot = new Robot();
+DarkBot.move(200);
+DarkBot.setSpeed(36);
+DarkBot.turn(36);	
+DarkBot.setPenColor(Color.blue);	
+DarkBot.setPenWidth(2);
+DarkBot.penDown();	
+for (int i = 0; i < 10; i++) {
+DarkBot.move(250);	
+DarkBot.setRandomPenColor();
+DarkBot.turn(36);
+}
+DarkBot.turn(36);
 
-		new Robot();
-		
-		
+
+for (int j = 0; j < 360/12; j++) {
+	DarkBot.move(250);
+DarkBot.setRandomPenColor();
+DarkBot.turn(360/12);
+}
+
+
+
 	}
 }
