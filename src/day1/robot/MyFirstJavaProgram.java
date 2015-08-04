@@ -23,7 +23,7 @@ DarkBot.turn(36);
 DarkBot.turn(36);
 
 
-for (int j = 0; j < 360/12; j++) {
+for (int j = 0; j < 1; j++) {
 	DarkBot.move(1);
 DarkBot.setRandomPenColor();
 DarkBot.turn(1);
